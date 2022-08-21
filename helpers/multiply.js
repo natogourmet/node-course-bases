@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const createFile = async (base = 5) => {
+const createFile = async (base = 5, list) => {
   console.log('=====================');
   console.log('Multiplication Table of ', base);
   console.log('=====================');
@@ -13,6 +13,10 @@ const createFile = async (base = 5) => {
       output += `${base} * ${index} = ${base * index}\n`;
     }
     fs.writeFileSync(fileName, output);
+
+    if (list) {
+      console.log(output);
+    }
 
     return fileName;
   } catch (err) {
