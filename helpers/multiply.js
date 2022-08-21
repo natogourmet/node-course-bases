@@ -1,11 +1,13 @@
 const fs = require('fs');
+const colors = require('colors');
+
 
 const createFile = async (base = 5, list) => {
-  console.log('=====================');
-  console.log('Multiplication Table of ', base);
-  console.log('=====================');
+  console.log('==========================='.green);
+  console.log('Multiplication Table of '.green, colors.blue( base ));
+  console.log('==========================='.green);
 
-  let fileName = `table-${base}.txt`;
+  let fileName = `./output/table-${base}.txt`;
   let output = '';
 
   try {
