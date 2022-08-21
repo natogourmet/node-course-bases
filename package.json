@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/natogourmet/node-course-bases#readme",
   "dependencies": {
+    "colors": "^1.4.0",
     "yargs": "^17.5.1"
   }
 }
